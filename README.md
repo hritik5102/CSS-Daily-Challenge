@@ -4,6 +4,12 @@
 
 This repository is a collection of CSS projects created as part of a daily challenge to improve CSS skills. Feel free to explore, learn, and contribute!
 
+### Projects
+
+|  No.  | Project                                                                                                                     | Live Demo                                                                         |
+| :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 01  | [Multicolor border using conic gradient](https://github.com/hritik5102/CSS-Daily-Challenge/)                             | [Live Demo](https://codepen.io/HritikDj/pen/XWLNjPB)               |
+
 ### Project Structure
 
 1. Each CSS project should be in its own folder.

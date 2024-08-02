@@ -1,0 +1,47 @@
+:root,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: ghostwhite;
+}
+
+p {
+  width: 300px;
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  position: relative;
+}
+
+p::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  z-index: -1;
+  padding: 5px;
+  border-radius: 8px;
+  background: conic-gradient(
+    from 0deg,
+    #ff5f6d,
+    #ffc371,
+    #ffd700,
+    #32cd32,
+    #00fa9a,
+    #1e90ff,
+    #9370db,
+    #fff56d
+  );
+}
