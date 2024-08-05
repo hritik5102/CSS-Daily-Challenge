@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-sizing model</title>
+    <style>
+      /* Dont's ❌ */
+      *,
+      *::before,
+      *::after {
+        box-sizing: content-box;
+      }
+
+      /* Do's ✅ */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+      }
+
+      .parent {
+        display: flex;
+        justify-content: center;
+      }
+
+      /*
+        For box-sizing: content-box: Overall width would be 244px
+        - Overall width = 200px content width + 40px padding from each + 4px border from each side.
+
+        For box-sizing: border-box: Overall width would be 200px
+        - Overall width = 156px content width + 40px padding from each + 4px border from each side.
+
+        Content width shrink to 156px to accomdate the padding width as well.
+      */
+      .box {
+        width: 200px;
+        border: 2px solid hotpink;
+        background-color: lavenderblush;
+        padding: 20px;
+      }
+
+      table {
+        margin-top: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+        perferendis reprehenderit doloremque facilis nisi temporibus nulla!
+        Laborum fugit iste aliquam voluptate quia exercitationem minima! Nam
+        corrupti hic quia? Dolor, voluptatem?
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>box-sizing: content-box</th>
+          <th>box-sizing: border-box</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="images/content-box.png" alt="content-box" />
+          </td>
+          <td>
+            <img src="images/border-box.png" alt="border-box" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
