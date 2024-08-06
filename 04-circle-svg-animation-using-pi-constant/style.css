@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-bg-color: #222;
+  --radius: 50px;
+  --circumference: calc(2 * pi * var(--radius));
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-bg-color);
+}
+
+svg {
+  width: 50vmin;
+  height: 50vmin;
+  stroke-dasharray: var(--circumference);
+  stroke-dashoffset: var(--circumference);
+  animation: dash 10000ms infinite alternate ease-in-out;
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
