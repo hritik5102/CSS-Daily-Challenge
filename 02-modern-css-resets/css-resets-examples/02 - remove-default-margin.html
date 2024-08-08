@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove default margin</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      /* Don's ❌ */
+      /* Default browser margin */
+
+      /* Do's ✅ */
+      * {
+        margin: 0;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+      }
+
+      .box {
+        width: 400px;
+        background-color: lavenderblush;
+        padding: 20px;
+        border: 2px solid hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    Browser gives bigger margin to heading as compare to paragraph elements.
+
+    You can check the default margin apply to h1 tag by the browser in the
+    computed tab from the browser dev-tools.
+
+    You can remove the browser's default margin from all the tag using "*" selector.
+    When you want to apply margin to a specific tag then you can override
+    the default margin, as wildcard selector (*) has extremely low specificity.
+    -->
+    <h2 class="box">Remove browser's default margin from all the tags</h2>
+  </body>
+</html>
