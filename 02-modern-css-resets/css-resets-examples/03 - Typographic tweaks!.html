@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typographic tweaks!</title>
+    <style>
+      :root {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Dont's ❌ */
+      body {
+        /* Default line height */
+        line-height: 1.2;
+      }
+
+      /* Do's ✅ */
+      body {
+        line-height: 1.5;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      h2,
+      p {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- line-height controls the vertical spacing between each line of text in a paragraph. The default value varies between browsers, but it tends to be around 1.2.
+
+    Here's the problem: for those who are dyslexic, these lines are packed too closely together, making it harder to read. The WCAG criteria states that line-height should be at least 1.5.
+
+    Refer from: https://www.joshwcomeau.com/css/custom-css-reset/
+    -->
+    <h1>Typographic tweaks!</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem
+      tempore, sunt voluptatum
+      <strong>exercitationem eius nulla consectetur!</strong> Facilis aspernatur
+      sapiente, incidunt optio odio consequuntur eos alias possimus hic laborum
+      consectetur numquam aliquid dolorem
+    </p>
+    <p>
+      <em
+        >voluptates distinctio assumenda? Natus culpa veritatis, possimus
+        laborum dolores</em
+      >
+      autem voluptas necessitatibus itaque minus hic blanditiis soluta ut enim
+      quam esse laboriosam
+      <del>iusto harum tenetur animi impedit</del> explicabo architecto
+      molestias nulla in.
+    </p>
+
+    <h2>
+      Now, this number does tend to produce quite-large lines on headings and
+      other elements with large type
+    </h2>
+    <h2>
+      You can override this value on headings. My understanding is that the WCAG
+      criteria is meant for "body" text, not headings.
+    </h2>
+  </body>
+</html>
