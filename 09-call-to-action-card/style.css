@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.modal {
+  width: 500px;
+  padding: 20px 25px;
+  border: 1px solid black;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+header {
+  padding-bottom: 15px;
+}
+
+header h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal-content {
+  line-height: 1.5;
+}
+
+.button-group {
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+button {
+  font-size: 14px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.button-group .primary {
+  color: white;
+  background-color: navy;
+}
+
+.button-group .secondary {
+  border: 1px solid navy;
+  background-color: lavender;
+}
