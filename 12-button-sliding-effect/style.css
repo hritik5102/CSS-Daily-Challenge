@@ -1,0 +1,51 @@
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(252, 210, 166);
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  font-weight: 600;
+  position: relative;
+}
+
+button:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: rgb(246, 62, 62);
+  width: 0;
+  height: 100%;
+  transition: all 0.35s ease-in-out;
+  border-radius: inherit;
+}
+
+button:hover {
+  color: white;
+}
+
+button:hover:after {
+  width: 100%;
+}
+
+button > span {
+  position: relative;
+  z-index: 2;
+}
