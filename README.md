@@ -8,7 +8,9 @@ This repository is a collection of CSS projects created as part of a daily chall
 
 |  No.  | Project                                                                                                                     | Live Demo                                                                         |
 | :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 01  | [Multicolor border using conic gradient](https://github.com/hritik5102/CSS-Daily-Challenge/)                             | [Live Demo](https://codepen.io/HritikDj/pen/XWLNjPB)               |
+| 01  | [Multicolor border using conic gradient](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/01-multicolor-border-using-conic-gradient)                             | [Live Demo](https://codepen.io/HritikDj/pen/XWLNjPB)               |
+| 02  | [Modern CSS Resets](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/02-modern-css-resets)                             | [Live Demo](https://codepen.io/HritikDj/pen/XWLNjPB)               |
+
 
 ### Project Structure
 
