@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background-color: #f9fafb;
+  text-align: center;
+  line-height: 100px;
+  border: 3px dashed black;
+}
+
+.box-1 {
+  width: 100px;
+  height: 100px;
+  background-color: #d1fae5;
+}
+
+.box-2 {
+  width: 100px;
+  height: 100px;
+  background-color: #fbcfe8;
+}
+
+.box-3 {
+  width: 100px;
+  height: 100px;
+  background-color: #dbeafe;
+}
+
+/* Position : Relative
+
+1. Offset from it's original position
+2. Does not removed the element from it's document flow
+*/
+
+/* .box-1 {
+  position: relative;
+  top: 100px;
+  left: 200px;
+} */
+
+/* Position : absolute
+
+1. Offset from the parent element
+2. Removed the element from the normal document flow
+3. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block i.e <html> root element
+*/
+
+/*  You can specify any of those position property (relative or absolute) to the parent element  */
+
+/* .container {
+  position: relative;
+}
+
+.box-1 {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+} */
+
+/* Position: fixed
+
+1. An element with position:fixed is positioned relative to the viewport
+2. The top, bottom, right and left properties are used to adjust the element away from the viewport
+3. The element is removed from the normal flow of the page
+*/
+
+/* .box-1 {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+} */
+
+/* Position : Sticky
+- Add a content before and after the container to make body scrollable.
+*/
+
+.box-1,
+.box-2,
+.box-3 {
+  position: sticky;
+  top: 10px;
+}
