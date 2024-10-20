@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+
+body {
+  margin: 20px;
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+.bordered {
+  border: 2px solid brown;
+  padding: 10px;
+  margin: 10px;
+}
+
+p,
+ul,
+li,
+a {
+  border: inherit;
+  margin: inherit;
+}
