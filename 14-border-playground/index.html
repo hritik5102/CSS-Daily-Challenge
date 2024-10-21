@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Playground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Border Playground</h1>
+    </header>
+    <main class="container">
+      <section class="selection">
+        <!-- 1 -->
+        <div class="borderColor">
+          <p>Border Color</p>
+          <div class="colors">
+            <input type="radio" name="red" id="red" />
+            <input type="radio" name="orange" id="orange" />
+            <input type="radio" name="yellow" id="yellow" />
+            <input type="radio" name="cyan" id="cyan" />
+            <input type="radio" name="blue" id="blue" />
+            <input type="radio" name="purple" id="purple" />
+            <input type="radio" name="pink" id="pink" />
+            <input type="radio" name="gray" id="gray" />
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="borderWidth">
+          <p>Border Color</p>
+          <div>
+            <input type="range" id="volume" name="volume" min="1" max="25" />
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="borderRadius">
+          <p>Border Radius</p>
+          <div>
+            <input type="range" id="volume" name="volume" min="0" max="50" />
+          </div>
+        </div>
+      </section>
+      <section class="boxes">
+        <div class="box one">Solid</div>
+        <div class="box two">Dotted</div>
+        <div class="box three">Dashed</div>
+        <div class="box four">Double</div>
+        <div class="box five">Groove</div>
+        <div class="box six">Ridge</div>
+        <div class="box seven">Inset</div>
+        <div class="box eight">Outset</div>
+        <div class="box nine">Mixed (Dashed Solid)</div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+header {
+  color: purple;
+}
+
+main {
+  margin-top: 20px;
+  width: 100%;
+}
+
+main:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 800px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selection {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  grid-template-rows: repeat(3, 1fr); /* Creates 3 equal rows */
+  gap: 40px; /* Adds space between boxes (optional) */
+  margin-top: 40px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
