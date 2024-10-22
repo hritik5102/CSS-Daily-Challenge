@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato&display=swap");
+body {
+  font-family: Lato, Fira Code, monospace;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcyan;
+  gap: 20px;
+}
+.box {
+  width: 600px;
+  height: 400px;
+  border: 2px dashed darkblue;
+  position: relative;
+}
+.box:focus-within {
+  border-color: red;
+}
+textarea {
+  resize: none;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  outline: 1px solid blue;
+  font-size: 16px;
+}
+.box2 {
+  resize: none;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  outline: 2px solid purple;
+  background-color: white;
+  font-size: 16px;
+}

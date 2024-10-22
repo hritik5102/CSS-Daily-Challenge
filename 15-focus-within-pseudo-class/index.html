@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - :focus-within pseudo class</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--- The :focus-within CSS pseudo-class matches an element if the element or any of its descendants are focused.-->
+
+    <!-- Using focus-within pseudo class -->
+    <div class="box">
+      <textarea>Hello</textarea>
+    </div>
+
+    <!-- Using tabindex : allows developers to make HTML elements focusable, using the tab key
+    Ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
+    -->
+    <div class="box">
+      <div class="box2" tabindex="0">World</div>
+    </div>
+
+    <!-- Read more: https://stackoverflow.com/questions/7876283/using-focus-to-style-outer-div -->
+  </body>
+</html>
