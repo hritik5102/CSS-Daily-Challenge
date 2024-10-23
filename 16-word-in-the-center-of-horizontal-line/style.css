@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background: #eff8ff;
+}
+
+.hr {
+  width: 400px;
+  text-align: center;
+  border-bottom: 1px solid #1118203f;
+  line-height: 0;
+}
+
+span {
+  padding: 0 16px;
+  background: #eff8ff;
+}
