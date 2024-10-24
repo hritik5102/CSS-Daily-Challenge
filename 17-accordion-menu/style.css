@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", Fira Code, monospace;
+}
+
+body {
+  background-color: lavenderblush;
+  margin: 0 40px;
+}
+
+.accordian {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+}
+
+.container .title {
+  padding: 15px 24px;
+  background-color: rgb(217, 216, 255);
+  color: black;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+}
+
+.container .content {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 0px;
+  margin-bottom: 20px;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.container .title::before {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.container.is-active .content {
+  height: 80px;
+}
+
+.container.is-active .title::before {
+  content: "-";
+}
