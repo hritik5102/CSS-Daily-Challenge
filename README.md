@@ -10,6 +10,10 @@ This repository is a collection of CSS projects created as part of a daily chall
 | :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | 01  | [Multicolor border using conic gradient](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/01-multicolor-border-using-conic-gradient)                             | [Live Demo](https://codepen.io/HritikDj/pen/XWLNjPB)               |
 | 02  | [Modern CSS Resets](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/02-modern-css-resets)                             | [Live Demo](https://codepen.io/HritikDj/pen/XWLNjPB)               |
+| 03  | [Styling table](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/03-styling-table)                             | [Live Demo](https://codepen.io/HritikDj/pen/OJYRxGp)               |
+| 04  | [Circle SVG Animation Using π Constant](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/02-modern-css-resets)                             | [Live Demo](https://codepen.io/HritikDj/pen/yLWExyK)               |
+| 05  | [CSS Inheritance](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/05-css-inheritance)                             | [Live Demo](https://codepen.io/HritikDj/pen/jOgZQoa)               |
+| 06  | [HSL Color Scheme](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/06-hsl-color-scheme)                             | [Live Demo](https://codepen.io/HritikDj/pen/OJeJzYy)               |
 
 
 ### Project Structure
