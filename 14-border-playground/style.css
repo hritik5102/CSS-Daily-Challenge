@@ -59,3 +59,96 @@ main:last-child {
   align-items: center;
   font-weight: 600;
 }
+
+p {
+  font-size: 20px;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.colors {
+  display: flex;
+  gap: 20px;
+}
+
+.radio {
+  margin-top: 20px;
+  position: relative;
+}
+
+label {
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+input[type="radio"] {
+  position: relative;
+  z-index: 3;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.imaginary-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  z-index: 2;
+}
+
+input[id="red"] + .imaginary-circle {
+  background-color: red;
+}
+
+input[id="green"] + .imaginary-circle {
+  background-color: green;
+}
+
+input[id="blue"] + .imaginary-circle {
+  background-color: blue;
+}
+
+input[id="orange"] + .imaginary-circle {
+  background-color: orange;
+}
+
+input[id="hotpink"] + .imaginary-circle {
+  background-color: hotpink;
+}
+
+input[id="purple"] + .imaginary-circle {
+  background-color: purple;
+}
+
+input[id="brown"] + .imaginary-circle {
+  background-color: brown;
+}
+
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px black;
+}
+
+.outer-ring {
+  position: absolute;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.slider {
+  margin-top: 20px;
+}

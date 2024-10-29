@@ -14,30 +14,80 @@
       <section class="selection">
         <!-- 1 -->
         <div class="borderColor">
-          <p>Border Color</p>
-          <div class="colors">
-            <input type="radio" name="red" id="red" />
-            <input type="radio" name="orange" id="orange" />
-            <input type="radio" name="yellow" id="yellow" />
-            <input type="radio" name="cyan" id="cyan" />
-            <input type="radio" name="blue" id="blue" />
-            <input type="radio" name="purple" id="purple" />
-            <input type="radio" name="pink" id="pink" />
-            <input type="radio" name="gray" id="gray" />
-          </div>
+          <p><strong>Border Color</strong></p>
+          <fieldset>
+            <div class="colors">
+              <div class="radio">
+                <label for="red">red</label>
+                <input type="radio" name="color" id="red" />
+                <div class="imaginary-circle"></div>
+                <div class="outer-ring"></div>
+              </div>
+              <div class="radio">
+                <label for="green">green</label>
+                <input type="radio" name="color" id="green" />
+                <div class="imaginary-circle"></div>
+                <div class="outer-ring"></div>
+              </div>
+              <div class="radio">
+                <label for="blue">blue</label>
+                <input type="radio" name="color" id="blue" />
+                <div class="imaginary-circle"></div>
+                <div class="outer-ring"></div>
+              </div>
+              <div class="radio">
+                <label for="orange">orange</label>
+                <input type="radio" name="color" id="orange" />
+                <div class="imaginary-circle"></div>
+                <div class="outer-ring"></div>
+              </div>
+              <div class="radio">
+                <label for="hotpink">hotpink</label>
+                <input type="radio" name="color" id="hotpink" />
+                <div class="imaginary-circle"></div>
+                <div class="outer-ring"></div>
+              </div>
+              <div class="radio">
+                <label for="purple">purple</label>
+                <input type="radio" name="color" id="purple" />
+                <div class="imaginary-circle"></div>
+                <div class="outer-ring"></div>
+              </div>
+              <div class="radio">
+                <label for="brown">brown</label>
+                <input type="radio" name="color" id="brown" />
+                <div class="imaginary-circle"></div>
+                <div class="outer-ring"></div>
+              </div>
+            </div>
+          </fieldset>
         </div>
         <!-- 2 -->
         <div class="borderWidth">
-          <p>Border Color</p>
-          <div>
-            <input type="range" id="volume" name="volume" min="1" max="25" />
+          <p><strong>Border Color</strong></p>
+          <div class="slider">
+            <input
+              type="range"
+              id="volume"
+              name="volume"
+              min="1"
+              max="25"
+              value="1"
+            />
           </div>
         </div>
         <!-- 3 -->
         <div class="borderRadius">
-          <p>Border Radius</p>
-          <div>
-            <input type="range" id="volume" name="volume" min="0" max="50" />
+          <p><strong>Border Radius</strong></p>
+          <div class="slider">
+            <input
+              type="range"
+              id="volume"
+              name="volume"
+              min="0"
+              max="50"
+              value="1"
+            />
           </div>
         </div>
       </section>
@@ -53,5 +103,33 @@
         <div class="box nine">Mixed (Dashed Solid)</div>
       </section>
     </main>
+
+    <script>
+      const colorRadioButtons = document.querySelectorAll(
+        ".radio input[type='radio']"
+      ); // Select all color radio buttons
+
+      colorRadioButtons.forEach((radioButton) => {
+        const imaginaryCircle = radioButton.nextElementSibling; // Get imaginary circle
+        const outerRing = imaginaryCircle.nextElementSibling; // Get outer ring circle
+
+        radioButton.addEventListener("change", () => {
+          if (radioButton.checked) {
+            colorRadioButtons.forEach((radioButton) => {
+              // Reset all outline
+              const imaginaryCircle = radioButton.nextElementSibling; // Get imaginary circle
+              const outerRing = imaginaryCircle.nextElementSibling; // Get outer ring
+              imaginaryCircle.style = "";
+              outerRing.style = "";
+            });
+
+            const selectedColor = radioButton.id; // Get selected color from id
+            imaginaryCircle.style.outline = "2px solid white"; // Imaginary circle white outline
+            outerRing.style.outline = `2px solid ${selectedColor}`; // Outer circle colored outline
+            outerRing.style.outlineOffset = "2px"; // Offset colored outline
+          }
+        });
+      });
+    </script>
   </body>
 </html>
