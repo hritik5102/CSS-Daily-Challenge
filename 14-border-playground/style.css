@@ -42,24 +42,6 @@ main:last-child {
   justify-content: space-between;
 }
 
-.boxes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-  grid-template-rows: repeat(3, 1fr); /* Creates 3 equal rows */
-  gap: 40px; /* Adds space between boxes (optional) */
-  margin-top: 40px;
-}
-
-.box {
-  width: 200px;
-  height: 200px;
-  border: 1px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-}
-
 p {
   font-size: 20px;
 }
@@ -151,4 +133,57 @@ input[type="radio"]:checked {
 
 .slider {
   margin-top: 20px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  grid-template-rows: repeat(3, 1fr); /* Creates 3 equal rows */
+  gap: 40px; /* Adds space between boxes (optional) */
+  margin: 40px 0 0;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.one {
+  border-style: solid;
+}
+
+.two {
+  border-style: dotted;
+}
+
+.three {
+  border-style: dashed;
+}
+
+.four {
+  border-style: double;
+}
+
+.five {
+  border-style: groove;
+}
+
+.six {
+  border-style: ridge;
+}
+
+.seven {
+  border-style: inset;
+}
+
+.eight {
+  border-style: outset;
+}
+
+.nine {
+  border-style: dashed solid;
 }

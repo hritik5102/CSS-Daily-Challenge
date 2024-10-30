@@ -63,8 +63,8 @@
           </fieldset>
         </div>
         <!-- 2 -->
-        <div class="borderWidth">
-          <p><strong>Border Color</strong></p>
+        <div class="borderSize">
+          <p><strong>Border Width</strong></p>
           <div class="slider">
             <input
               type="range"
@@ -72,7 +72,7 @@
               name="volume"
               min="1"
               max="25"
-              value="1"
+              value="2"
             />
           </div>
         </div>
@@ -109,6 +109,20 @@
         ".radio input[type='radio']"
       ); // Select all color radio buttons
 
+      const boxes = document.querySelectorAll(".box"); // Select all boxes
+      const borderSize = document.querySelector(
+        ".borderSize input[type='range']"
+      ); // Select border size slider
+
+      const borderRadius = document.querySelector(
+        ".borderRadius input[type='range']"
+      ); // Select border radius slider
+
+      boxes.forEach((box) => {
+        box.style.borderWidth = `${borderSize.value}px`;
+        box.style.borderRadius = `${borderRadius.value}%`;
+      });
+
       colorRadioButtons.forEach((radioButton) => {
         const imaginaryCircle = radioButton.nextElementSibling; // Get imaginary circle
         const outerRing = imaginaryCircle.nextElementSibling; // Get outer ring circle
@@ -127,7 +141,21 @@
             imaginaryCircle.style.outline = "2px solid white"; // Imaginary circle white outline
             outerRing.style.outline = `2px solid ${selectedColor}`; // Outer circle colored outline
             outerRing.style.outlineOffset = "2px"; // Offset colored outline
+
+            boxes.forEach((box) => (box.style.borderColor = selectedColor));
           }
+        });
+      });
+
+      borderSize.addEventListener("change", (e) => {
+        boxes.forEach((box) => {
+          box.style.borderWidth = `${e.target.value}px`;
+        });
+      });
+
+      borderRadius.addEventListener("change", (e) => {
+        boxes.forEach((box) => {
+          box.style.borderRadius = `${e.target.value}%`;
         });
       });
     </script>
