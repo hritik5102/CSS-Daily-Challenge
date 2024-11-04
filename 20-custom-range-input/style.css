@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin: 20px 0;
+}
+
+img {
+  width: 200;
+  height: 200px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none; /* By giving it the value of none this tells each respective browser to clear out any default styles.
+  This removes track: this is the part of the horizontal slider that the circular thumb runs along */
+  background: transparent;
+  cursor: pointer;
+  width: 15rem;
+  background: #053a5f;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* webkit targets Chrome, Safari, Opera and Edge (post-Chromium) browsers */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 2rem;
+  background-color: cyan;
+}
+
+/* -moz target firefox browser */
+input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 1rem;
+  background-color: cyan;
+  height: 2rem;
+  /* Default border-radius and grey border that it applies to the thumb, we need to remove that */
+  border: none;
+  border-radius: initial;
+}
+
+/* Removes default focus that gets track on the range slider */
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  border: 1px solid #053a5f;
+  outline: 2px solid #053a5f;
+  outline-offset: 2px;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  border: 1px solid #053a5f; /* We need add our custom border */
+  outline: 2px solid #053a5f;
+  outline-offset: 2px;
+}
