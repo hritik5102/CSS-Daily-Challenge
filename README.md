@@ -16,6 +16,13 @@ This repository is a collection of CSS projects created as part of a daily chall
 | 06  | [HSL Color Scheme](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/06-hsl-color-scheme)                             | [Live Demo](https://codepen.io/HritikDj/pen/OJeJzYy)               |
 | 07  | [A11y - Two tonned outline](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/07-two-tonned-outline-a11y)                             | [Live Demo](https://codepen.io/HritikDj/pen/KKJRpbV)               |
 | 08  | [Color All Diagonal Cells](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/08-color-all-diagonal-cells)                             | [Live Demo](https://codepen.io/HritikDj/pen/ZErmMxd)               |
+| 09  | [Call to action card](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/09-call-to-action-card)                             | [Live Demo](https://codepen.io/HritikDj/pen/yLQyXQR)               |
+| 10 | [URL Input Validation Using CSS](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/10-url-input-type-validation-using-css)                             | [Live Demo](https://codepen.io/HritikDj/pen/zYWWWWM)               |
+| 11  | [Negative Margin Effect](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/11-negative-margin-effect)                             | [Live Demo](https://codepen.io/HritikDj/pen/JjQZjRj)               |
+| 12  | [Button Sliding Effect](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/12-button-sliding-effect)                             | [Live Demo](https://codepen.io/HritikDj/pen/dydgbVQ)               |
+
+
+
 
 
 ### Project Structure
