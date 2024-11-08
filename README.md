@@ -20,6 +20,10 @@ This repository is a collection of CSS projects created as part of a daily chall
 | 10 | [URL Input Validation Using CSS](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/10-url-input-type-validation-using-css)                             | [Live Demo](https://codepen.io/HritikDj/pen/zYWWWWM)               |
 | 11  | [Negative Margin Effect](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/11-negative-margin-effect)                             | [Live Demo](https://codepen.io/HritikDj/pen/JjQZjRj)               |
 | 12  | [Button Sliding Effect](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/12-button-sliding-effect)                             | [Live Demo](https://codepen.io/HritikDj/pen/dydgbVQ)               |
+| 13  | [CSS Position Property](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/13-css-position-property)                             | [Live Demo](https://codepen.io/HritikDj/pen/yLvqRPP)               |
+| 14 | [Border Playground](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/14-border-playground)                             | [Live Demo](https://codepen.io/HritikDj/pen/xxvjgMJ)               |
+| 15  | [Focus Within Pseudo Class](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/15-focus-within-pseudo-class)                             | [Live Demo](https://codepen.io/HritikDj/pen/mdMaPmV)               |
+| 16  | [Word in the center of horizontal line](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/16-word-in-the-center-of-horizontal-line)                             | [Live Demo](https://codepen.io/HritikDj/pen/PoKVpzx)               |
 
 
 
