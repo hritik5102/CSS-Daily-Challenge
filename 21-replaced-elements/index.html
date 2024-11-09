@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Replaced Elements</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Replaced Elements
+
+     1. Just like you can change the color and background of the paragraph element, you can not do
+        that for the replaced elements such as image, video, or iframe.
+
+     2. In HTML, replaced elements are elements whose content is replaced by external resources, like
+        images or media, rather than content you put directly in HTML. The browser uses the resource
+        (like an image or a video) instead of rendering any text or content inside the tag itself.
+
+        For example, <img> is a replaced element because the browser replaces it with an image file
+        specified in the src attribute. You don’t put the actual image in the HTML; you just give the
+        path, and the browser loads and displays it.
+
+    Note:
+        The default value for the width property is auto. By default, for most elements, this means
+        “automatically grow to fill as much space as possible”.
+
+        Images, as well as other “replaced elements” like <video> and <canvas>, are special. They don't
+        automatically expand to fill the available space. Instead, they rely on their intrinsic size.
+
+        For example, suppose I take a photo on an old webcam. That photo has a native size of 640 × 480.
+        When I embed this image on the page, using an <img> tag, it'll have a default width of 640px.
+
+        This is the problem. width: auto has a different meaning for replaced elements. It doesn't mean
+        “stretch out and fill all of the space”, it means “use your natural width”!
+    -->
+    <div class="container">
+      <!-- From line 6, If you copy and paste paragraph element inside this container, it will inherit parent width and height and adjust it's content size, but where as image won't be respect the parent container width and height, you will have to explicity set width:100% on the image property -->
+    </div>
+
+    <h2>Non Replaced Elements like paragraph elements</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat aut
+      ipsam ducimus ex facere aliquam autem qui numquam saepe laboriosam,
+      asperiores natus, sequi consequatur culpa nihil tempora, accusamus
+      deleniti soluta repellat voluptates eveniet a! Iusto atque rerum
+      voluptatum ipsum quam.
+    </p>
+
+    <h2>Replaced elements like images</h2>
+
+    <img
+      src="https://picsum.photos/id/237/200/300
+      "
+    />
+  </body>
+</html>
