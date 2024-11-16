@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Space betweeen inline elements</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Wotford", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Space betweeen inline elements</h2>
+    <p>
+      Browser add some extra space to inline elements. Browser treats inline
+      elements as if they're typography. It makes sense that with text, you'd
+      want a bit of extra space, so that the lines in a paragraph aren't crammed
+      in too tightly.
+    </p>
+
+    <h3>Extra space because of white spaces</h3>
+    <p>
+      But there's another unrelated way that inline elements have a bit of extra
+      spacing. Take a look at this example; notice that there are gaps between
+      the 3 images:
+    </p>
+    <img
+      src="https://picsum.photos/id/234/200/300"
+      width="100"
+      alt="Cat photo"
+    />
+    <img
+      src="https://picsum.photos/id/234/200/300"
+      width="100"
+      alt="Cat photo"
+    />
+    <img
+      src="https://picsum.photos/id/234/200/300"
+      width="100"
+      alt="Cat photo"
+    />
+
+    <p>
+      The reason for this extra <strong>“magic space”</strong> is that the
+      browser treats inline elements as if they're typography. It makes sense
+      that with text, you'd want a bit of extra space, so that the lines in a
+      paragraph aren't crammed in too tightly.
+    </p>
+
+    <h3>No extra whitespace</h3>
+    <img
+      src="https://picsum.photos/id/234/200/300"
+      width="100"
+      alt="Cat photo"
+    /><img
+      src="https://picsum.photos/id/234/200/300"
+      width="100"
+      alt="Cat photo"
+    /><img
+      src="https://picsum.photos/id/234/200/300"
+      width="100"
+      alt="Cat photo"
+    />
+
+    <p>
+      This happens because HTML is space-sensitive, at least to an extent. The
+      browser can't tell the difference between whitespace added to separate
+      words in a paragraph, and whitespace added to indent our HTML and keep it
+      readable.
+    </p>
+
+    <strong
+      >Reference:
+      <a href="https://courses.joshwcomeau.com/css-for-js"
+        >Josh Comeau - CSS for JS</a
+      ></strong
+    >
+  </body>
+</html>
