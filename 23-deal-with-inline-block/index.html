@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Space betweeen inline elements</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Wotford", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Deal with inline block</h2>
+    <p>
+      inline-block: It’s essentially the same thing as inline, except that you
+      can set height and width values.
+    </p>
+
+    <p>
+      Usually, properties like width and margin-top have no effect on an inline
+      element, but they do work on inline-block elements. In this example, we've
+      set our <code>&lt;strong&gt;</code> to be inline-block, but default it's
+      inline element.
+    </p>
+
+    <p>
+      If you remove inline-block property from strong tag, the margin-top and
+      width applied on the strong would not have any effect.
+    </p>
+
+    <p><strong>Warning:</strong> Alpaca may bite.</p>
+
+    <h2>Big downside with inline-block</h2>
+
+    <p>
+      It disables line-wrapping. This might not seem like a big tradeoff, but
+      consider what happens when we try to use this on longer-length links:
+    </p>
+
+    <h3>With Inline Block</h3>
+    <p class="paragraph-with-inline-block">
+      The WCAG 2.2 has 13 guidelines. The guidelines are organized under
+      <a
+        href="https://www.w3.org/WAI/WCAG22/Understanding/intro#understanding-the-four-principles-of-accessibility"
+        >4 principles: perceivable, operable, understandable, and robust.</a
+      >
+      For each guideline, there are testable success criteria. The success
+      criteria are at three levels: A, AA, and AAA.
+    </p>
+
+    <h3>Without Inline Block</h3>
+    <p class="paragraph-without-inline-block">
+      The WCAG 2.2 has 13 guidelines. The guidelines are organized under
+      <a
+        href="https://www.w3.org/WAI/WCAG22/Understanding/intro#understanding-the-four-principles-of-accessibility"
+        >4 principles: perceivable, operable, understandable, and robust.</a
+      >
+      For each guideline, there are testable success criteria. The success
+      criteria are at three levels: A, AA, and AAA.
+    </p>
+
+    <div>
+      <b>Reference:</b>
+      <ul>
+        <li>
+          <a href="https://courses.joshwcomeau.com/css-for-js"
+            >Josh Comeau - CSS for JS</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.samanthaming.com/pictorials/css-inline-vs-inlineblock-vs-block/"
+            >Samantha Ming - CSS Inline vs Inline-Block vs Block
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
