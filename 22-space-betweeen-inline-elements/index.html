@@ -13,11 +13,13 @@
   </head>
   <body>
     <h2>Space betweeen inline elements</h2>
+
     <p>
-      Browser add some extra space to inline elements. Browser treats inline
-      elements as if they're typography. It makes sense that with text, you'd
-      want a bit of extra space, so that the lines in a paragraph aren't crammed
-      in too tightly.
+      Browser add some extra space to inline elements, eg:
+      <code>a, button, em, strong etc</code>. Browser treats inline elements as
+      if they're typography. It makes sense that with text, you'd want a bit of
+      extra space, so that the lines in a paragraph aren't crammed in too
+      tightly.
     </p>
 
     <h3>Extra space because of white spaces</h3>
@@ -43,10 +45,9 @@
     />
 
     <p>
-      The reason for this extra <strong>“magic space”</strong> is that the
-      browser treats inline elements as if they're typography. It makes sense
-      that with text, you'd want a bit of extra space, so that the lines in a
-      paragraph aren't crammed in too tightly.
+      This space is caused by the whitespace between elements. If we squish our
+      HTML so that there are no newlines or whitespace characters between
+      images, this problem goes away.
     </p>
 
     <h3>No extra whitespace</h3>
