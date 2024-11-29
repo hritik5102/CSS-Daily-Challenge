@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Space betweeen inline elements</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Wotford", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    1. min-content
+      When we set width: min-content, we're specifying that we want our element to become as small as the longest word. This is a totally different perspective: we aren't sizing based on the space made available by the parent, we're sizing based on the element's children!
+
+    2. max-content
+      The max-content sizing keyword represents the maximum intrinsic size of the content. For text content this means that the content will not wrap at all even if it causes overflows.
+
+    3. fit-content:
+      The fit-content keyword is equivalent to fit-content(stretch). In practice, this means that the box will use the available space, but never more than max-content.
+      If the content is too wide to fit in the parent, however, it adds line-breaks as-needed to ensure it never exceeds the available space. It behaves just like width: auto.
+    -->
+    <div class="container">
+      <h2>Short</h2>
+      <h2>A mid-length heading</h2>
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatum
+        dolorem architecto consectetur 😬😬😬😬😬😬😬
+      </h2>
+    </div>
+  </body>
+</html>
