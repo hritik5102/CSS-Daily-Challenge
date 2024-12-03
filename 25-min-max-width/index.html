@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Space betweeen inline elements</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Wotford", sans-serif;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+      }
+
+      .box {
+        width: 50%;
+        min-width: 200px;
+        max-width: 400px;
+        margin: 0 auto;
+        border: solid hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    Try resizing this result to see how the box changes size!
+
+    The particularly exciting thing about min-width and max-width is that they let us mix units. We can specify constraints in pixels, but set a percentage width.
+    -->
+    <div class="box">Hello World</div>
+  </body>
+</html>
