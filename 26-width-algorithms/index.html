@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      CSS - h1 and p are block elements but they do not have width:100%
+    </title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "wotfard", sans-serif;
+      }
+
+      h1 {
+        /*
+          Try toggling "width: 100%" in the devtools to see the effect.
+
+          When we enable width: 100%, we cause the heading to pop outside of our frame. This happens because of the left margin.
+
+          When we use percentage-based widths, those percentages are based on the parent element's content space. If the body tag makes 400px of space available, any child with 100% width will become 400px wide, regardless of any other circumstances. This calculation happens first, before the margin is applied.
+
+          Block elements have a default width value of auto, not 100%. width: auto works very similar to margin: auto; it's a hungry value that will grow as much as it's able to, but no more. In the case above, our h1 will grow to fill the container minus the 16px of left margin.
+
+          auto will let our element greedily consume the available space while respecting any constraints (in this case margin-left)
+
+          It's a subtle but important distinction: by default, block elements have dynamic sizing. They're context-aware.
+        */
+        width: 100%;
+        margin-left: 16px;
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello world</h1>
+  </body>
+</html>
