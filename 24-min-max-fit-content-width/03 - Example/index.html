@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Alternative of fit-content</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "wotford", sans-serif;
+      }
+
+      h2 {
+        background-color: peachpuff;
+        margin-bottom: 16px;
+        padding: 8px;
+      }
+
+      /* Solution 1: Using width: max-content and max-width:100%
+
+        max-content behaves similarly to fit-content, but for long items, it extends beyond the parent's width, causing
+        horizontal overflow. What if we could use width: 100% to constrain it to the parent's width and prevent it
+        from exceeding those bounds?
+
+        This solution might seem to work as expected, but as we discussed in part 25 (width algorithms), when we apply
+        margin-left to an element with max-width or width: 100%, the element will take the full width and after apply
+        margin left on it, it will overflow; it won't adjust itself to the available width like width: auto does.
+
+        Since fit-content does not suffer from this issue, we can not proceed with this solution.
+      */
+
+      /* Solution 2: Using display: inline-block
+
+        The desired outcome can be achieved using inline-block if we consider its behavior. inline-block elements behave
+        similarly to inline elements in that if the preceding element has space available, the subsequent inline-block
+        element will occupy that space, just like inline elements. If there is no available space, the inline-block
+        element will behave like a block element.
+
+        However, we want the h2 element to retain its block-level behavior and not adjust like an inline element.
+
+        We could solve this problem by wrapping each h2 in a div element, but that is a less elegant solution and would
+        clutter our HTML with unnecessary div elements.
+      */
+
+      /* Solution 3: display: table ✅
+
+        display: table causes elements to render using Table layout. This is the layout mode used by the <table> HTML tag.
+        It's an alternative layout algorithm to flow layout or positioned layout.
+
+        By default, tables will shrink to hold their contents, but are still block-level elements. This is exactly what we
+        want in this case, though it is a bit of a hack; a table element expects to have table rows as children, not text.
+      */
+
+      /* Solution 4: min-width: min-content and max-width: max-content ✅
+
+        h2 {
+          min-width: min-content;
+          max-width: max-content;
+        }
+
+        Here's how this works:
+        - We haven't changed the width property, and so it will remain at auto. Because h2 is a block-level element, it will
+          grow and shrink to fit the parent container.
+        - But, it can't grow above its max-width, which is equal to max-content. If our h2 only has a few characters, this
+          might be a really small value, like 100px. By setting this value as max-width, we clamp the element so that it
+          can't expand to fill the parent container.
+        - What if there's enough content to fill the parent container? For example, suppose we have 1000px worth of content
+          in a 500px box… Well, max-width doesn't have any effect in this case. Our element grows to fill the container
+          (thanks to width: auto), and this total width is 500px, well below the 1000px limit set using max-width.
+
+        Reference from :
+        - https://courses.joshwcomeau.com/css-for-js/01-rendering-logic-1/10-widths
+      */
+
+      /* Try toggling below classes in the devtools to see the effect. */
+      h2 {
+        min-width: min-content;
+        max-width: max-content;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The challenge here is to look for alternative solution of fit-content -->
+    <h2>Short</h2>
+    <h2>A mid-length heading</h2>
+    <h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatum
+      dolorem architecto consectetur 😬😬😬😬😬😬😬
+    </h2>
+  </body>
+</html>
