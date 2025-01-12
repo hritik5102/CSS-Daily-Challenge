@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Max Width Wrapper</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.5;
+      }
+
+      body {
+        font-family: "wotfard", sans-serif;
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100vh;
+        align-items: center;
+      }
+
+      figure {
+        padding: 8px;
+        border: 1px solid white;
+        margin-bottom: 32px;
+        /* Try toggling "width: min-content" in the devtools to see the effect. */
+        width: min-content;
+      }
+
+      figure img {
+        margin-bottom: 8px;
+      }
+
+      figcaption {
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <figure>
+      <img
+        alt="A hallway with rainbow-colored lighting"
+        src="images/wall-art.jpg"
+        style="width: 200px"
+      />
+      <figcaption>
+        Photo by Efe Kurnaz in Camp Nou, Barcelona, Spain. Found on Unsplash.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img alt="A yawning kitten" src="images/cat.jpg" style="width: 250px" />
+      <figcaption>Unknown photographer. Found on Unsplash.</figcaption>
+    </figure>
+  </body>
+</html>
