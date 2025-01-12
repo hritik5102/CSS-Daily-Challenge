@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Max Width Wrapper</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.5;
+      }
+
+      body {
+        font-family: "wotfard", sans-serif;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+
+      .container {
+        max-width: 500px;
+        background-color: white;
+        padding: 30px 40px;
+        border-radius: 8px;
+        margin: 0 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>
+        Champions aren't made in gyms. Champions are made from something they
+        have deep inside them-a desire, a dream, a vision. They have to have the
+        skill, and the will. But the will must be stronger than the skill.
+      </h3>
+    </div>
+  </body>
+</html>
