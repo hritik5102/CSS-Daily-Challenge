@@ -24,6 +24,8 @@ This repository is a collection of CSS projects created as part of a daily chall
 | 14 | [Border Playground](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/14-border-playground)                             | [Live Demo](https://codepen.io/HritikDj/pen/xxvjgMJ)               |
 | 15  | [Focus Within Pseudo Class](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/15-focus-within-pseudo-class)                             | [Live Demo](https://codepen.io/HritikDj/pen/mdMaPmV)               |
 | 16  | [Word in the center of horizontal line](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/16-word-in-the-center-of-horizontal-line)                             | [Live Demo](https://codepen.io/HritikDj/pen/PoKVpzx)               |
+| 17  | [Accordion Menu](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/17-accordion-menu)                             | [Live Demo](https://codepen.io/HritikDj/pen/PoQRGJN)               |
+| 18  | [Text Hover Effect](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/18-hover-effect)                             | [Live Demo](https://codepen.io/HritikDj/pen/dyxLzxM)               |
 
 
 
