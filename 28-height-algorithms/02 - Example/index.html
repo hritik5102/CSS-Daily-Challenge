@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Height Algorithms</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.5;
+      }
+
+      body {
+        font-family: "wotfard", sans-serif;
+        background-color: black;
+      }
+
+      /*
+        Note: Please check and understand the problem in Example 01 before proceeding to the
+        solution below.
+
+        When the <html> element is given height: 100%, it takes up the full height of the viewport, serving as the base. The <body> element's 100% height is then calculated
+        based on this base size.
+
+        When we define the min-height for our section element, it ensures that the section is at least as tall as the viewport but can expand beyond that if the content requires
+        more space.
+
+        Applying height: 100% to the <body> element alone does not solve the issue because the same problem we saw earlier applies to the <html> element as well—it derives its height from the <body> height. If you inspect the elements in DevTools, you'll notice that even after applying height: 100% to the <body> tag, both <html> and <body> still have heights equal to the content height.
+
+        Only after applying height: 100% to the <html> tag does it occupy the full viewport height. This then allows the <body> element to use it as a reference, and the section element can correctly apply min-height: 100%.
+      */
+      html,
+      body {
+        height: 100%;
+      }
+
+      section {
+        min-height: 100%;
+        border: 2px solid white;
+      }
+
+      p {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>I'm just a very small text</p>
+    </section>
+  </body>
+</html>
