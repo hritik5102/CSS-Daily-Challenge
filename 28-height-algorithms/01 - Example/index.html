@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Height Algorithms</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.5;
+      }
+
+      body {
+        font-family: "wotfard", sans-serif;
+        background-color: black;
+      }
+
+      section {
+        /*
+          You might have noticed that even after setting the min-height of our section element to 100%, the content still doesn't occupy the full height of the viewport.
+
+          This happens because when we set a percentage-based height, it is calculated relative to the height of the parent element. In this case, the parent is the <body> element, which does not have a specific height set. By default, the <body> only grows as much as necessary to contain its child elements. This means that the body's height is determined by its children content. As a result, the min-height we applied has no effect.
+
+          To see this in action, open DevTools and inspect the <body> tag—you'll notice that its height matches the height of its content.
+
+          So, how can we solve this problem? We'll address it in our next example.
+        */
+        min-height: 100%;
+        border: 2px solid white;
+      }
+
+      p {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>I'm just a very small text</p>
+    </section>
+  </body>
+</html>
