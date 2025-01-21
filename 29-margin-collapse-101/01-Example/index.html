@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Margin Collapse 101</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.5;
+      }
+
+      body {
+        font-family: "wotfard", sans-serif;
+        background-color: black;
+      }
+      .container {
+        width: 600px;
+        background-color: white;
+        padding: 0px 30px;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+      }
+
+      /*
+        Our aim is to apply margin-top to h1 element to give some breathing space,
+        but due to margin collapse, it's shifts the whole card/container by 150px.
+        Open devTool, and toggle margin-top property to see the effect.
+      */
+      h1 {
+        /* margin-top: 150px; */
+        margin-bottom: 16px;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      p:last-of-type {
+        padding-bottom: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello World</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error
+        temporibus perspiciatis nobis corporis voluptate possimus exercitationem
+        a, culpa odio cum veniam magnam minima assumenda magni delectus aliquid
+        dolorem? Ullam tempore, laborum quibusdam totam dolore earum aut
+        excepturi harum fuga?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est
+        tempora ullam. Mollitia doloremque perferendis nihil minima, praesentium
+        saepe aliquid repudiandae accusamus error placeat debitis, amet eum
+        eligendi facere nobis corporis nostrum beatae tempore distinctio labore
+        sit vel? Sint, itaque.
+      </p>
+    </div>
+  </body>
+</html>
