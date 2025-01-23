@@ -30,6 +30,8 @@ This repository is a collection of CSS projects created as part of a daily chall
 | 20  | [Custom Range Input](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/20-custom-range-input)                             | [Live Demo](https://codepen.io/HritikDj/pen/eYqLyGv)               |
 | 21  | [Replaced Elements](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/21-replaced-elements)                             | [Live Demo](https://codepen.io/HritikDj/pen/bGXQxRQ)               |
 | 22  | [Space between inline elements](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/22-space-betweeen-inline-elements)                             | [Live Demo](https://codepen.io/HritikDj/pen/zYgXNMR)               |
+| 23  | [Deal with inline block](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/23-deal-with-inline-block)                             | [Live Demo](https://codepen.io/HritikDj/pen/zYgXZRe)               |
+| 24  | [Min Max Fit Content Width](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/24-min-max-fit-content-width)                             | [Live Demo](https://codepen.io/HritikDj/pen/qEWWzgN)              |
 
 
 ### Project Structure
