@@ -20,32 +20,30 @@
         background-color: black;
       }
 
-      .container {
-        border: 1px solid red;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
       h2 {
         color: white;
         text-align: center;
-        margin-bottom: 40px;
+        margin: 40px 0;
       }
 
       .box {
         width: 600px;
         height: 300px;
-        background-color: white;
-        border-radius: 4px;
-        /* margin-left: auto;
-        margin-right: auto; */
         display: flex;
+        background-color: white;
         align-items: center;
         justify-content: center;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
+      /*
+        Each paragraph has 40px of vertical margin (margin-top and margin-bottom), and
+        that margin collapses. The paragraphs will be 40px apart, not 80px apart.
+
+        When margin-collapse was added to the CSS specification, the language designers made a curious choice: horizontal margins (margin-left and margin-right) shouldn't collapse.
+      */
       .paragraph-1 {
         margin-bottom: 40px;
       }
