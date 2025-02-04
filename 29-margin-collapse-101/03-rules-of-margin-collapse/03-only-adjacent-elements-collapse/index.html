@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Margin Collapse 101</title>
+    <link href="https://fonts.cdnfonts.com/css/wotfard" rel="stylesheet" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.5;
+      }
+
+      body {
+        font-family: "wotfard", sans-serif;
+        background-color: black;
+      }
+
+      .container {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h2 {
+        color: white;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .box {
+        width: 600px;
+        height: 300px;
+        display: flex;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .paragraph-1 {
+        margin-bottom: 40px;
+      }
+
+      .paragraph-2 {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Margin collapse 101 - Only adjacent elements collapse</h2>
+      <p class="box paragraph-1">Paragraph 1</p>
+      <!-- It is somewhat common to use the <br /> tag (a line-break) to increase space between block elements
+
+      The <br /> tag is invisible and empty, but any element between two others will block margins from collapsing. Elements need to be adjacent in the DOM for their margins to collapse.
+      -->
+      <br />
+      <p class="box paragraph-2">Paragraph 2</p>
+    </div>
+  </body>
+</html>
