@@ -32,6 +32,7 @@ This repository is a collection of CSS projects created as part of a daily chall
 | 22  | [Space between inline elements](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/22-space-betweeen-inline-elements)                             | [Live Demo](https://codepen.io/HritikDj/pen/zYgXNMR)               |
 | 23  | [Deal with inline block](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/23-deal-with-inline-block)                             | [Live Demo](https://codepen.io/HritikDj/pen/zYgXZRe)               |
 | 24  | [Min Max Fit Content Width](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/24-min-max-fit-content-width)                             | [Live Demo](https://codepen.io/HritikDj/pen/qEWWzgN)              |
+| 25  | [Width Algorithm](https://github.com/hritik5102/CSS-Daily-Challenge/tree/main/24-min-max-fit-content-width)                             | [Live Demo](https://codepen.io/HritikDj/pen/qEWWzgN)              |
 
 
 ### Project Structure
